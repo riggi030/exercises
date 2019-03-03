@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Solitaire</title>
+    <style>
+        .wrapper{
+            width:525px;
+            height:525px;
+            background-image: url("felt.jpg");
+            background-repeat: repeat;
+        }
+        .gradient{
+            width:525px;
+            height:525px;
+           background-image: url("gradient.jpg");
+            opacity: 0.7;
+            background-repeat: repeat;
+            position: absolute;
+            /*z-index: 1*/
+        }
+        .box{
+            width:400px;
+            height:400px;
+            background-image: url("felt2.jpg");
+            position: relative;
+            top: 50px;
+            left: 50px;
+            text-align: center;
+
+        }
+        .card{
+            height: 100px;
+            width: 64px;
+            position: absolute;
+            display:inline-block;
+            top:42px;
+            left: 160px;
+            text-align:center;
+            /*z-index:2*/
+        }
+        .king{
+            position: absolute;
+            top:67px;
+            display: inline-block;
+            left: 160px;
+            /*z-index:3*/
+
+        }
+        .queen{
+            position: absolute;
+            margin: 0 auto;
+            top: 92px;
+            display: inline-block;
+            left: 160px;
+            /*z-index:4*/
+
+        }
+        .jack{
+            position: absolute;
+            margin: 0 auto;
+            top:117px;
+            display: inline-block;
+            left: 160px;
+            /*z-index:5*/
+
+        }
+        .ten{
+            position: absolute;
+            margin: 0 auto;
+            top:142px;
+            display: inline-block;
+            left: 160px;
+            /*z-index:6*/
+
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="gradient">
+    <div class="box">
+        <div class="card"><img src="card.png" width="64px" height="100px" alt="card background"></div>
+        <div class="king"><img src="kingspades.png"alt="image of king of spades"></div>
+        <div class="queen"><img src="queenhearts.png"alt="image of queen of hearts"></div>
+        <div class="jack"><img src="jackclubs.png"alt="image of jack of clubs"></div>
+        <div class="ten"><img src="tendiamonds.png"alt="image of 10 of diamonds"></div>
+    </div><!--end of box-->
+    </div><!--end of gradient-->
+
+</div> <!--end of wrapper-->
+
+</body>
+</html>
