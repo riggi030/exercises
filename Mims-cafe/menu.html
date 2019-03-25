@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Asap+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .main {
+            width: 1300px;
+            height: 7100px;
+            background-color: #e8D26B;
+            margin: 0 auto;
+            position: relative;
+            top: 200px;
+            z-index: 3;
+        }
+
+        footer {
+            position: absolute;
+            width: 100%;
+            height: 50px;
+            bottom: 0;
+            top:7300px;
+            text-align: center;
+            z-index: 5;
+
+            background: rgba(38, 39, 129,0.8);
+        }
+
+        body {
+        }
+
+        .hero-image {
+            background-image: url("Roof_hafez_tomb.jpg");
+            background-color: #cccccc;
+            height: 1000px;
+            background-position: center;
+            background-repeat: repeat-y;
+            background-size: cover;
+            position: relative;
+            z-index: 1;
+        }
+
+        nav {
+            /* Rectangle */
+
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            z-index: 2;
+
+            background: rgba(38, 39, 129, 0.8);
+            mix-blend-mode: normal;
+
+        }
+
+        .sub {
+            /* Rectangle */
+
+            position: absolute;
+            left: 0px;
+            top: 130px;
+            width: 100%;
+            height: 70px;
+            z-index: 2;
+
+            background: #EAF3E3;
+            mix-blend-mode: normal;
+
+        }
+
+
+        h1 {
+            font-size: 36px;
+            font-family: "Bebas Neue", Arial, sans-serif;
+            font-weight: lighter;
+            margin: 0 auto;
+            text-align: center;
+            color: black;
+            padding: 30px 0 0 0;
+        }
+
+        h2 {
+            font-size: 48px;
+            font-family: "Bebas Neue", Arial, sans-serif;
+            font-weight: lighter;
+            margin: 20px 10px 10px 100px;
+            color: black;
+            padding: 30px 0 0 0;
+        }
+
+        h3 {
+            font-size: 24px;
+            font-family: "Roboto", Arial, sans-serif;
+            font-weight: bold;
+            margin: 30px 100px 10px;
+            color: black;
+            padding: 10px 0 5px 0;
+        }
+
+        p {
+            position: relative;
+            font-size: 20px;
+            font-family: "Lato", Arial, sans-serif;
+            margin: 20px 200px 20px 60px;
+            padding: 0px 10px 20px 10px;
+            color: black;
+        }
+        li{
+
+        }
+
+       h4#Mim{
+           display: inline-block;
+           font-size: 64px;
+           font-family: "Amatic SC", Arial, sans-serif;
+           font-weight: bold;
+           color: #27d4ca;
+           padding: 25px 25px;
+
+        }
+
+        h4#order, h4#contact {
+            display: inline;
+            font-size: 64px;
+            font-family: "Bebas Neue", Arial, sans-serif;
+            font-weight: lighter;
+            padding: 0 80px;
+            color: white;
+            margin: 0 auto;
+
+        }
+
+        h4#menu {
+            display: inline;
+            font-size: 64px;
+            font-family: "Bebas Neue", Arial, sans-serif;
+            font-weight: lighter;
+            padding: 0 80px;
+            color: #27d4ca;
+            margin: 0 auto;
+        }
+
+        p#FB, p#phone, p#yelp {
+            display: inline;
+            position: relative;
+            font-size: 24px;
+            font-family: "Bebas Neue", Arial, sans-serif;
+            font-weight: lighter;
+            padding: 100px 150px 150px 50px;
+            color: white;
+            margin: 100px 0 100px;
+        }
+        h1{
+            display: inline;
+            position: relative;
+            font-family: "Bebas Neue", Arial, sans-serif;
+            font-weight: lighter;
+            padding: 100px 150px 150px 50px;
+            left: 55px;
+            top: 15px;
+            color: black;
+            margin: 100px 0px 100px;
+        }
+
+        a:link {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:active {
+            text-decoration: none;
+            color: #27d4ca;
+        }
+
+        img {
+            float: left;
+            position: relative;
+            left: 90px;
+            margin: 10px 100px 10px 10px;
+            padding: 0 30px 0 0;
+
+        }
+    </style>
+</head>
+
+
+<body>
+<div class="wrapper">
+    <div class="hero-image">
+        <nav>
+            <a href="index.html"><h4 id="Mim">Mim's Cafe</h4></a>
+            <a href="order.html"><h4 id="order">Order</h4></a>
+            <a href="menu.html"><h4 id="menu">Menu</h4></a>
+            <a href="contact.html"><h4 id="contact">Contact</h4></a>
+        </nav><!--end of site nav-->
+
+        <div class="sub">
+            <a href="#Entrees"><h1>Entrees</h1></a>
+            <a href="#Sandwiches"><h1>Sandwiches</h1></a>
+            <a href="#American"><h1>American</h1></a>
+            <a href="#Sidestag"><h1>Sides</h1></a>
+
+        </div> <!--end of page menu-->
+
+        <div class="main">
+            <section><a name="Entrees"><h2>Entrees</h2></a></section>
+
+            <article><h3>Sheik Platter</h3></article>
+            <img src="buffet.jpg" alt="Sheik Platter" align="left" height="200px">
+            <p>The best of Mim's! The Sheik Platter is a generous sampler platter including falafel, meat kabobs of
+                your choice, and veggie kabobs plus sides. Recommended for at least two people.
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </p>
+
+            <article><h3>Chicken Kabobs</h3></article>
+            <img src="chik-kabobs.jpg" alt="Chicken" align="left" height="200px">
+            <p>Platter plate sides description price. Turnip greens yarrow ricebean rutabaga endive cauliflower sea
+                lettuce
+                kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery
+                potato
+                scallion desert raisin horseradish spinach carrot soko.
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </p>
+            <article><h3>Beef Shawarma</h3></article>
+            <img src="beef-shawarma.jpg" alt="Shawarma Platter" align="left" height="200px">
+            <p> Platter plate sides description price. Turnip greens yarrow ricebean rutabaga endive cauliflower sea
+                lettuce
+                kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery
+                potato
+                scallion desert raisin horseradish spinach carrot soko.
+                <br>
+                <br>
+                <br>
+                <br>
+            </p>
+            <article><h3>Kufta Kabobs</h3></article>
+            <img src="kufta.jpg" alt="Kufta Platter" align="left" height="200px">
+            <p>Platter plate sides description price. Turnip greens yarrow ricebean rutabaga endive cauliflower sea
+                lettuce
+                kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery
+                potato
+                scallion desert raisin horseradish spinach carrot soko.
+                <br>
+                <br>
+                <br>
+                <br>
+            </p>
+            <article><h3>Tilapia Kabobs</h3></article>
+            <img src="tilapia.jpg" alt="Tilapia Platter" align="left" height="200px">
+            <p>Platter plate sides description price. Turnip greens yarrow ricebean rutabaga endive cauliflower sea
+                lettuce
+                kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery
+                potato
+                scallion desert raisin horseradish spinach carrot soko.
+                <br>
+                <br>
+                <br>
+                <br>
+            </p>
+            <article><h3>Vegetarian Kabobs</h3></article>
+            <img src="" alt="Veg Platter" align="left" height="200px">
+            <p>Platter plate sides description price. Turnip greens yarrow ricebean rutabaga endive cauliflower sea
+                lettuce
+                kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery
+                potato
+                scallion desert raisin horseradish spinach carrot soko.
+                <br>
+                <br>
+                <br>
+                <br>
+            </p>
+            <article><h3>Falafel Dinner</h3></article>
+            <img src="falafel.jpg" alt="Falafel Platter" align="left" height="200px">
+            <p>Platter plate sides description price. Turnip greens yarrow ricebean rutabaga endive cauliflower sea
+                lettuce
+                kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery
+                potato
+                scallion desert raisin horseradish spinach carrot soko.
+                <br>
+                <br>
+                <br>
+                <br>
+            </p>
+            <article><h3>Mediterranean Burrito</h3></article>
+            <img src="med-burrito.jpg" alt="burrito" align="left" height="200px">
+            <p>Platter plate sides description price. Turnip greens yarrow ricebean rutabaga endive cauliflower sea
+                lettuce
+                kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery
+                potato
+                scallion desert raisin horseradish spinach carrot soko.
+                <br>
+                <br>
+                <br>
+                <br>
+            </p>
+            <article><h3>Make Your Own Platter</h3></article>
+            <img src="create.jpg" alt="DIY Platter" align="left" height="200px">
+            <p>Platter plate sides description price. Turnip greens yarrow ricebean rutabaga endive cauliflower sea
+                lettuce
+                kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery
+                potato
+                scallion desert raisin horseradish spinach carrot soko.
+                <br>
+                <br>
+                <br>
+                <br>
+            </p>
+
+
+            <section><a name="Sandwiches"><h2>Sandwiches</h2></a>
+
+                <article><h3>Chicken Kabob Sandwich</h3>
+                    <img src="Chicken-Pita-Sand.jpg" alt="Chicken Sandwich" align="left" height="200px">
+                    <p>Sandwich description price. Turnip greens yarrow ricebean rutabaga endive cauliflower sea
+                        lettuce
+                        kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale.
+                        Celery
+                        potato
+                        scallion desert raisin horseradish spinach carrot soko.
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </p></article>
+                <article><h3>Beef Shawarma Sandwich</h3>
+                    <img src="beef-sand.jpg" alt="Beef Sandwich" align="left" height="200px">
+                    <p>Sandwich description price. Turnip greens yarrow ricebean rutabaga endive cauliflower sea
+                        lettuce
+                        kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale.
+                        Celery
+                        potato
+                        scallion desert raisin horseradish spinach carrot soko.
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </p></article>
+                <article><h3>Kufta Sandwich</h3>
+                    <img src="kufta-sand.jpg" alt="Kufta Sandwich" align="left" height="200px">
+                    <p>Sandwich description price. Turnip greens yarrow ricebean rutabaga endive cauliflower sea
+                        lettuce
+                        kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale.
+                        Celery
+                        potato
+                        scallion desert raisin horseradish spinach carrot soko.
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </p></article>
+                <article><h3>Falafel Sandwich</h3>
+                    <img src="falafel-sand.jpg" alt="Falafel Sandwich" align="left" height="200px">
+                    <p>Sandwich description price. Turnip greens yarrow ricebean rutabaga endive cauliflower sea
+                        lettuce
+                        kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale.
+                        Celery
+                        potato
+                        scallion desert raisin horseradish spinach carrot soko.
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </p></article>
+            </section>
+
+            <section><a name="American"><h2>American</h2></a>
+                <article><h3>Half-Pound Burger</h3>
+                    <img src="burger.jpg" alt="Burger" align="left" height="200px" width="200px">
+                    <p>Burger description price. Turnip greens yarrow ricebean rutabaga endive cauliflower sea
+                        lettuce
+                        kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale.
+                        Celery
+                        potato
+                        scallion desert raisin horseradish spinach carrot soko.
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </p></article>
+                <article><h3>Swiss Mushroom Burger</h3>
+                    <img src="swiss.jpg" alt="Burger2" align="left" height="200px" >
+                    <p>Burger description price. Turnip greens yarrow ricebean rutabaga endive cauliflower sea
+                        lettuce
+                        kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale.
+                        Celery
+                        potato
+                        scallion desert raisin horseradish spinach carrot soko.
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </p>
+                </article>
+                <article><h3>Ruben Sandwich</h3>
+                    <img src="ruben.jpeg" alt="Ruben" align="left" height="200px" width="200px">
+                    <p>Sandwich description price. Turnip greens yarrow ricebean rutabaga endive cauliflower sea
+                        lettuce
+                        kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale.
+                        Celery
+                        potato
+                        scallion desert raisin horseradish spinach carrot soko.
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </p>
+                </article>
+                <article><h3>Mediterranean Cheesesteak</h3>
+                    <img src="Philly-Cheesesteak-Sandwich.jpg" alt="Cheesesteak" align="left" height="200px">
+                    <p>Sauteed shwarma or chicken with peppers, onions, herbs, and mozzarella
+                        Turnip greens yarrow ricebean rutabaga endive cauliflower sea
+                        lettuce
+                        kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale.
+                        Celery
+                        potato
+                        scallion desert raisin horseradish spinach carrot soko.
+                        <br>
+                        - 6.95
+                        <br>
+                        <br>
+                        <br>
+                    </p>
+                </article>
+            </section>
+
+            <section><a name="Sidestag"><h2>Sides</h2></a>
+                <article><h3>Hummus</h3>
+                    <img src="hummus.jpg" alt="Hummus" align="left" height="200px">
+                    <p>Side or appetizer description price. Turnip greens yarrow ricebean rutabaga endive cauliflower
+                        sea
+                        lettuce
+                        kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale.
+                        Celery
+                        potato
+                        scallion desert raisin horseradish spinach carrot soko.
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </p>
+                </article>
+                <article><h3>Baba Ghanouj</h3>
+                    <img src="baba.jpg" alt="Baba Ghanouj" align="left" height="200px">
+                    <p>Side or appetizer description price. Turnip greens yarrow ricebean rutabaga endive cauliflower
+                        sea
+                        lettuce
+                        kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale.
+                        Celery
+                        potato
+                        scallion desert raisin horseradish spinach carrot soko.
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </p>
+                </article>
+                <article><h3>Tabouli</h3>
+                    <img src="tabbouleh.png" alt="Tabouli" align="left" height="200px" width="300px" >
+                    <p>Side or appetizer description price. Turnip greens yarrow ricebean rutabaga endive cauliflower
+                        sea
+                        lettuce
+                        kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale.
+                        Celery
+                        potato
+                        scallion desert raisin horseradish spinach carrot soko.
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </p>
+                </article>
+                <article><h3>Village Salad</h3>
+                    <img src="village-salad.jpg" alt="Salad" align="left" height="200px" width="200px">
+                    <p>lettuce, tomato, cucumber, and red cabbage. Covered with feta cheese and Italian dressing.
+                        Sm/lg price. add chicken price. add shawarma price.
+                        Turnip greens yarrow ricebean rutabaga endive cauliflower sea
+                        lettuce
+                        kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale.
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </p>
+                </article>
+                <article><h3>Rice</h3>
+                    <img src="rice.jpg" alt="Rice" align="left" height="200px" width="200px">
+                    <p>Side or appetizer description price. Turnip greens yarrow ricebean rutabaga endive cauliflower
+                        sea
+                        lettuce
+                        kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale.
+                        Celery
+                        potato
+                        scallion desert raisin horseradish spinach carrot soko.
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </p>
+                </article>
+                <article><h3>Fries</h3>
+                    <img src="fries.jpeg" alt="Fries" align="left" height="200px" width="200px">
+                    <p>Side or appetizer description price. Turnip greens yarrow ricebean rutabaga endive cauliflower
+                        sea
+                        lettuce
+                        kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale.
+                        Celery
+                        potato
+                        scallion desert raisin horseradish spinach carrot soko.
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </p>
+                </article>
+            </section>
+        </div><!--end of main div-->
+
+        <footer>
+            <a href="https://www.facebook.com/Mims-Cafe-118162474926876/"><p id="FB">FACEBOOK</p></a>
+            <a href="https://www.yelp.com/biz/mims-cafe-saint-paul"><p id="yelp">YELP</p></a>
+            <a href="tel:6516460456"><p id="phone">PHONE</p></a>
+        </footer>
+
+    </div> <!--end of hero div-->
+</div>
+
+</body>
+</html>
