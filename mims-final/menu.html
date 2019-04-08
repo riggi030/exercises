@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Menu</title>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Asap+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="icon" type="ico" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        .wrapper {
+            height:6400px;
+        }
+        .main {
+            width: 1300px;
+            height: 6135px;
+            margin: 0 auto;
+            position: relative;
+            background: #E8D26B;
+            top:200px;
+            z-index: 2;
+        }
+        h2 {
+            font-size: 48px;
+            font-family: "Bebas Neue", Arial, sans-serif;
+            font-weight: lighter;
+            color: black;
+            text-align: center;
+            position: relative;
+            top: 40px;
+            margin-bottom: 60px;
+        }
+
+        h3 {
+            font-size: 24px;
+            font-family: "Roboto", Arial, sans-serif;
+            font-weight: bold;
+            color: black;
+            padding: 10px;
+            margin-top:40px;
+            text-align:center;
+            position: relative;
+        }
+
+        p {
+            position: relative;
+            font-size: 20px;
+            font-family: "Lato", Arial, sans-serif;
+            margin-left: 60px;
+            margin-right: 60px;
+            padding-bottom: 10px;
+            color: black;
+            z-index:4;
+            text-align: center;
+        }
+        article {
+            width: 600px;
+            text-align: center;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        h4#order, h4#contact {
+            display: inline;
+            font-size: 64px;
+            font-family: "Bebas Neue", Arial, sans-serif;
+            font-weight: lighter;
+            color: white;
+            margin: 0 auto;
+            padding-right: 80px;
+            padding-left: 80px;
+
+        }
+
+        h4#menu {
+            display: inline;
+            font-size: 64px;
+            font-family: "Bebas Neue", Arial, sans-serif;
+            font-weight: lighter;
+            color: #27d4ca;
+            margin: 0 auto;
+            padding-right: 80px;
+
+        }
+        footer{
+            position: absolute;
+            bottom:0;
+            z-index:6;
+        }
+
+        img {
+            float: left;
+            position: relative;
+            margin: 10px 100px 40px 10px;
+            padding: 0 30px 0 0;
+            z-index:3;
+            text-wrap: none;
+
+        }
+    </style>
+</head>
+
+
+<body>
+<div class="wrapper">
+    <div class="hero-image"><!--responsive background image-->
+        <nav><!--interpage nav-->
+            <a href="index.html"><h4 id="home">Mim's Cafe</h4></a>
+            <a href="order.html"><h4 id="order">Order</h4></a>
+           <div class="subnav"> <button class="subnavbtn"></button>
+                <a href="menu.html"><h4 id="menu">Menu</h4><i class="fa fa-caret-down"></i></a>
+            <div class="subnav-content" style="top:130px; position:fixed"><!--intrapage nav-->
+                <a href="#Entrees"><h5> > Entrees</h5></a>
+                <a href="#Sandwiches"><h5>> Sandwiches</h5></a>
+                <a href="#American"><h5> > American</h5></a>
+                <a href="#Sidestag"><h5>> Sides</h5></a>
+            </div> <!--end of subnav content-->
+            </div> <!--end of subnav menu/intrapage nav-->
+            <a href="contact.html"><h4 id="contact">Contact</h4></a>
+        </nav><!--end of interpage nav-->
+
+        <div class="main" id="borderimg"><!--main content div-->
+            <div class="entrees"><a name="Entrees"><h2>Entrees</h2></a>
+                <div class="header-container">
+                        <img src="ehead.png" alt="Mim's entrees" height=200px style="width:800px">
+                    </div>
+                <article><p style="text-align:left; width:800px; left:-150px">Entrees are available as plates or platters. Plates come with only the listed items.
+                    Platters come with the listed items plus pita bread, a small salad, and a side of your choice: rice, fries,
+                    hummus, baba ganouj, or two half-servings of any of these sides.
+                </p></article>
+            <article><h3>Sheik Platter</h3>
+            <p>The best of Mim's! The Sheik Platter is a generous sampler platter including falafel, meat kabobs of
+                your choice, and veggie kabobs plus sides. Recommended for at least two people.
+                <br>
+                <br>
+                Plate - 21.95
+                <br>
+                Platter - 28.95
+            </p>
+            </article>
+            <article><h3>Chicken Kabobs</h3>
+            <p>Grilled chicken kabobs with onion and pepper.
+                <br>
+                <br>
+                Plate - 7.48
+                <br>
+                Platter - 10.95
+            </p>
+            </article>
+            <article><h3>Beef Shawarma</h3>
+            <p> Marinated and grilled beef, seasoned with Middle Eastern spices and peppers.
+                <br>
+                <br>
+                Plate - 8.48
+                <br>
+                Platter - 11.95
+            </p>
+            </article>
+            <article><h3>Kufta Kabobs</h3>
+            <p>Lamb and beef kabobs served with grilled onions and vegetables.
+                <br>
+                <br>
+                Plate - 7.48
+                <br>
+                Platter - 10.95
+            </p>
+            </article>
+
+            <article><h3>Tilapia Kabobs</h3>
+            <p>White fish kabobs served with grilled onions and vegetables.
+                <br>
+                <br>
+                Plate - 7.48
+                <br>
+                Platter - 10.95
+            </p>
+            </article>
+            <article><h3>Vegetarian Kabobs</h3>
+            <p>Your choice of falafel or vegetable shiskabobs, grilled and seasoned.
+                <br>
+                <br>
+                Plate - 5.61
+                <br>
+                Platter - 6.95
+            </p>
+            </article>
+                <article><h3>Make Your Own Platter</h3>
+                    <p>Any two of meat or veggie entrees from above, plus pita bread, a small salad, and a side of your choice: rice, fries,
+                        hummus, baba ganouj, or two half-servings of any of these sides
+                        <br>
+                        <br>
+                        Platter only - 10.95
+                    </p></article>
+
+            <article><h3>Mediterranean Burrito</h3>
+            <p>Sauteed peppers, onions, and herbs topped with mozzarella cheese, hummus,
+                basmati rice, salsa, lettuce, corn salad, and tahini salad, wrapped in a whole wheat tortilla.
+                <br>
+                <br>
+                Veggie - 4.95
+                <br>
+                Chicken - 5.95
+                <br>
+                Shawarma - 6.95
+                <br>
+                <br>
+            </p>
+            </article>
+
+            </div><!--end of Entrees-->
+
+
+            <div class="sandwiches"><a name="Sandwiches"><h2>Sandwiches</h2></a>
+                <p>Add fries to any sandwich for only $1.00 extra! <br><br>
+                </p>
+                <div class="header-container">
+                    <img src="sahead.png" alt="Mim's sandwiches" height=200px style="width:800px">
+                </div>
+
+                <article><h3 style="margin-top:30px">Chicken Kabob Sandwich</h3>
+                    <p>Grilled chicken kabobs wrapped in pita bread with lettuce, tomato, and sauce.
+                        <br>
+                        <br>
+                        5.95
+                        <br>
+                    </p></article>
+
+                <article><h3>Beef Shawarma Sandwich</h3>
+                    <p>Marinated and grilled beef wrapped in pita bread with lettuce, tomato, and sauce.
+                        <br>
+                        <br>
+                        6.95
+                        <br>
+                    </p></article>
+
+                <article><h3>Kufta Sandwich</h3>
+                    <p>Mix of lamb and beef wrapped in pita bread with lettuce, tomato, and sauce.
+                        <br>
+                        <br>
+                        6.95
+                        <br>
+                    </p></article>
+
+                <article><h3>Falafel Sandwich</h3>
+                    <p>Fried falafel wrapped in pita bread with lettuce, tomato, and sauce.
+                        <br>
+                        <br>
+                        4.95
+                        <br>
+                    </p></article>
+            </div><!--end of Sandwiches-->
+
+            <div class="American"><a name="American"><h2>American</h2></a>
+                <p>Add fries to any American entree for only $1.00 extra!<br><br>
+                </p>
+                <div class="header-container">
+                    <img src="ahead.png" alt="Mim's american" height=200px style="width:800px">
+                </div>
+
+                <article><h3>Half-Pound Burger</h3>
+                    <p> ½ lb burger with cheese, tomato, onion, and lettuce.
+                        <br>
+                        <br>
+                        4.95
+                    </p></article>
+
+                <article><h3>Swiss Mushroom Burger</h3>
+                    <p> ½ lb burger with cheese, tomato, onion, and lettuce, plus mushrooms and Swiss cheese.
+                        <br>
+                        <br>
+                        5.45
+                    </p>
+                </article>
+
+                <article><h3>Ruben Sandwich</h3>
+                    <p>Pastrami on rye with coleslaw and cheese.
+                        <br>
+                        <br>
+                        4.95
+                    </p>
+                </article>
+
+                <article><h3>Mediterranean Cheesesteak</h3>
+                    <p>Sauteed shawarma or chicken with peppers, onions, herbs, and mozzarella.
+                        <br>
+                        <br>
+                        6.95
+                        <br>
+                        <br>
+                    </p>
+                </article>
+            </div><!--end of American-->
+
+            <div class="sides"><a name="Sidestag"><h2>Sides</h2></a>
+                <div class="header-container">
+                    <img src="shead.png" alt="Mim's sides" height=200px style="width:800px">
+                </div>
+
+               <section><p>Sides are available for in-house orders in small or regular size,
+                    but are only available for delivery in regular size.</p></section>
+
+                <article><h3>Hummus</h3>
+                    <p>
+                        Small - 2.50
+                        <br>
+                        Regular - 4.45
+                        <br>
+                    </p>
+                </article>
+
+                <article><h3>Baba Ghanouj</h3>
+                    <p>
+                        Small - 2.50
+                        <br>
+                        Regular - 4.45
+                        <br>
+                    </p>
+                </article>
+
+                <article><h3>Tabouli</h3>
+                    <p>
+                        Small - 2.50
+                        <br>
+                        Regular - 3.95
+                        <br>
+                    </p>
+                </article>
+
+                <article><h3>Village Salad</h3>
+                    <p>Lettuce, tomato, cucumber, and red cabbage. Covered with feta cheese and Italian dressing.
+                        <br>
+                        <br>
+                        Small - 2.50
+                        <br>
+                        Regular - 4.45
+                        <br>
+                        Add chicken - 6.95
+                    </p>
+                </article>
+
+                <article><h3>Rice</h3>
+                    <p>
+                        Small - 1.50
+                        <br>
+                        Regular - 2.50
+                        <br>
+                    </p>
+                </article>
+
+                <article><h3>Fries</h3>
+                    <p>
+                        Small - 1.50
+                        <br>
+                        Regular - 2.50
+                        <br>
+                        <br>
+                        <br>
+                    </p>
+                </article>
+
+            </div><!--end of Sides-->
+
+
+
+        </div><!--end of main div-->
+
+    </div> <!--end of hero div-->
+    <footer>
+        <a href="https://www.facebook.com/Mims-Cafe-118162474926876/" target="_blank"><h6 id="FB">FACEBOOK</h6></a>
+        <a href="https://www.yelp.com/biz/mims-cafe-saint-paul" target="_blank"><h6 id="yelp">YELP</h6></a>
+        <a href="tel:6516460456"><h6 id="phone">PHONE</h6></a>
+    </footer>
+</div><!--end of wrapper-->
+</body>
+</html>

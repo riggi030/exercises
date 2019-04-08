@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Order Mim's</title>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Asap+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="icon" type="ico" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        .main {
+            width: 900px;
+            height: 700px;
+            background-color: rgba(38, 39, 129, 0.8);
+            margin: 0 auto;
+            position: relative;
+            top: 200px;
+            z-index: 3;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-family: "Bebas Neue", Arial, sans-serif;
+            font-weight: lighter;
+            margin: 0 auto;
+            text-align: center;
+            color: white;
+            padding: 30px 0 0 0;
+        }
+
+        p {
+            font-size: 18px;
+            font-family: "Lato", Arial, sans-serif;
+            margin-left: 60px;
+            margin-top: 20px;
+            margin-right: 30px;
+            padding-right: 30px;
+            color: white;
+        }
+
+        h4#contact, h4#menu {
+            display: inline;
+            font-size: 64px;
+            font-family: "Bebas Neue", Arial, sans-serif;
+            font-weight: lighter;
+            padding: 0 80px;
+            color: white;
+            margin: 0 auto;
+
+        }
+
+        h4#order {
+            display: inline;
+            font-size: 64px;
+            font-family: "Bebas Neue", Arial, sans-serif;
+            font-weight: lighter;
+            padding: 0 80px;
+            color: #27d4ca;
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+
+
+<body>
+<div class="wrapper">
+    <div class="hero-image"><!--responsive background image-->
+        <nav>
+            <a href="index.html"><h4 id="home">Mim's Cafe</h4></a>
+            <a href="order.html"><h4 id="order">Order</h4></a>
+            <a href="menu.html"><h4 id="menu">Menu</h4></a>
+            <a href="contact.html"><h4 id="contact">Contact</h4></a>
+        </nav>
+
+        <div class="main"><!--main content div-->
+            <h1>Order Mim's Catering</h1>
+            <div class="slideshow-container"> <!--catering food slide show-->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="Mims-contact.png" alt="mim's patio" style="width:600px; height:200px;">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="falafel2.png" alt="falafel" height=200px style="width:600px">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="chik-slide.png" alt="muraf" height=200px; style="width:600px">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="lamb-slide.png" alt="kofta" height=200px; style="width:600px">
+                </div>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div><!--end of catering food slide show-->
+
+            <section><!--catering info-->
+                <aside><!--food options-->
+                    <ul>
+                        <li>For $8 per person, we will provide chicken muraf (marinated chicken breast, sautéed with
+                            onion and green bell peppers),
+                            falafel, hummus, rice, salad, and pita bread suitable for a gathering of any size.<br><br>
+                        </li>
+                        <li>For $10 per person, we will provide the above plus kutfa kabobs for each guest.</li>
+                    </ul>
+                </aside><!--end food options-->
+                <article>
+                    <p>Mim's catering is available for a wide variety of events and varying sizes. We provide a buffet
+                        of items from our menu suitable for any occasion, and delivery is free of charge.
+                        <br>
+                        <br>
+                        Call us during our business hours (M-F, 11am-9pm)
+                        at <a href="tel:6516460456"><strong>651-646-0456</strong> </a> for an immediate response.
+                        <br>
+                        <br>
+                        You can also e-mail us at shaheensinc@gmail.com
+                        if you have further questions or need more details, and we will respond to you within 24 hours.
+                    </p>
+                </article>
+            </section><!--end catering info-->
+        </div> <!--end of main content div-->
+    </div> <!--end of hero div-->
+
+
+    <footer>
+        <a href="https://www.facebook.com/Mims-Cafe-118162474926876/" target="_blank"><h6 id="FB">FACEBOOK</h6></a>
+        <a href="https://www.yelp.com/biz/mims-cafe-saint-paul" target="_blank"><h6 id="yelp">YELP</h6></a>
+        <a href="tel:6516460456"><h6 id="phone">PHONE</h6></a>
+    </footer>
+
+</div><!--end of wrapper-->
+
+<!--slideshow script from W3-->
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+</script><!--end slideshow script from W3-->
+
+</body>
+</html>

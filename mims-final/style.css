@@ -1,0 +1,339 @@
+/*begin site-wide CSS*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    width: 1300px;
+    height:1000px;
+    position: relative;
+
+}
+
+.hero-image {
+    background-image: url("Roof_hafez_tomb.jpg");
+    background-color: #cccccc;
+    height: 1000px;
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* main interpage nav */
+nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    overflow: hidden;
+
+    background: rgba(38, 39, 129, 0.8);
+    mix-blend-mode: normal;
+
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 67px;
+    left: 0;
+    bottom: 67px;
+    text-align: center;
+    z-index: 3;
+
+    background: rgba(38, 39, 129, 0.8);
+}
+
+/* alt logo and home button */
+h4#home {
+    display: inline-block;
+    font-size: 64px;
+    font-family: "Amatic SC", Arial, sans-serif;
+    font-weight: bold;
+    color: #27d4ca;
+    padding: 25px 25px;
+
+}
+
+/*footer text styling*/
+h6 {
+    display: inline-block;
+    position: relative;
+    font-size: 24px;
+    font-family: "Bebas Neue", Arial, sans-serif;
+    font-weight: lighter;
+    padding-right: 150px;
+    padding-left: 100px;
+    padding-top: 20px;
+    color: white;
+}
+
+/*site wide link styling*/
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration-color: transparent;
+    color: navy;
+}
+
+a:active {
+    text-decoration: none;
+    color: #27d4ca;
+}
+
+/*end site-wide CSS*/
+
+/*contact page CSS*/
+/*embedded google maps styling*/
+.map {
+    left: 650px;
+    top: 300px;
+    position: absolute;
+    margin-top: 40px;
+    z-index: 4;
+}
+
+/*menu page CSS*/
+/* intrapage menu navigation */
+.subnav {
+    float: none;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    display: inline;
+    top: 20px;
+    left: 20px;
+
+}
+
+.subnav {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.subnav .subnavbtn {
+    border: none;
+    outline: none;
+    font-family: inherit;
+    margin: 0;
+    left: 100px;
+    right: 100px;
+    top: 25px;
+    position: relative;
+
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: #EAF3E3;
+}
+
+.subnav-content {
+    display: block;
+    position: fixed;
+    right: 0;
+    width: 100%;
+    z-index: 5;
+    height: 70px;
+    top: 150px;
+
+    background: #EAF3E3;
+    mix-blend-mode: normal;
+}
+
+.subnav-content a {
+    float: left;
+    text-decoration: none;
+    font-size: 56px;
+    font-family: "Bebas Neue", Arial, sans-serif;
+    font-weight: lighter;
+    margin: 0 auto;
+}
+
+h5 {
+    position: relative;
+    display: inline-block;
+    padding-right: 130px;
+    left: 100px;
+    text-align: center;
+    color: #27d4ca;
+}
+
+.subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: underline;
+}
+
+#borderimg {
+    border: 100px solid transparent;
+    border-top:0;
+    padding:0;
+    -webkit-border-image: url(Roof_hafez_tomb.jpg) 100 round; /* Safari 3.1-5 */
+    -o-border-image: url(Roof_hafez_tomb.jpg) 30 round; /* Opera 11-12.1 */
+    border-image: url(Roof_hafez_tomb.jpg) 100 round;
+}
+.sandwiches, .sides {
+    background-color: #EAF3E3;
+
+}
+
+/*order page CSS*/
+/* Slideshow code */
+.slideshow-container {
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.header-container {
+    max-width: 800px;
+    position: relative;
+    margin: 0 auto;
+}
+
+/*slide numbering*/
+.numbertext {
+    color: #f2f2f2;
+    font-family: "Lato", Arial, sans-serif;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 20px;
+}
+.mySlides {
+    display: none;
+}
+
+/*slide dots*/
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active {
+    background-color: #717171;
+}
+
+
+/*slide fade styling*/
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+/*central logo styling*/
+.logo {
+    position: relative;
+    width: 500px;
+    height: 514px;
+    margin: 0 auto;
+
+    left: 0;
+    right: 0;
+    top: 250px;
+    bottom: 0;
+
+    background: #262781;
+    border-radius: 309.5px;
+    z-index: 6;
+
+}
+
+/*central logo hover overlay*/
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+    border-radius: 309.5px;
+}
+
+.logo:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-family: "Bebas Neue", Arial, sans-serif;
+    font-size: 60px;
+    position: absolute;
+    padding-top: 30px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/*catering aside styling*/
+aside {
+    display: block;
+    width: 28%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    margin-right: 40px;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #27d4ca;
+    color: white;
+}
+
+li {
+    font-size: 16px;
+    font-family: "Lato", Arial, sans-serif;
+    margin: 5px;
+    color: white;
+}
+
